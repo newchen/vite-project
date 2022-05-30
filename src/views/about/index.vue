@@ -6,7 +6,7 @@
 </template>
 
 <script lang='ts' setup>
-import { useCounterStore } from '../../store/counter'
+import { useCounterStore } from '@/store/counter'
 
 const counterStore = useCounterStore()
 
@@ -14,3 +14,9 @@ const add = () => {
   counterStore.count++
 }
 </script>
+
+<style lang="less" scoped>
+div {
+  color: @testColor;
+}
+</style>

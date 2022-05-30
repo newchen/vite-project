@@ -4,6 +4,8 @@ import router from './router'
 // import store from './store/index.vuex'
 import { createPinia } from 'pinia'
 
+// import './styles/index.less'
+
 createApp(App)
   .use(router)
   .use(createPinia())
