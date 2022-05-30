@@ -1,4 +1,10 @@
 module.exports = {
+  // globals: {
+  //   defineEmits: 'readonly',
+  //   defineProps: 'readonly',
+  //   defineExpose: 'readonly',
+  //   withDefaults: 'readonly'
+  // },
   env: {
     browser: true,
     es2021: true
@@ -18,5 +24,6 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+    'vue/multi-word-component-names': 'off'
   }
 }
