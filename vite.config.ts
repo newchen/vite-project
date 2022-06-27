@@ -27,5 +27,14 @@ export default defineConfig({
         additionalData: '@import "@/styles/variables.less";'
       }
     }
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'xxx',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, '')
+      }
+    }
   }
 })
